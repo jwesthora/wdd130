@@ -1,0 +1,15 @@
+header background{
+    color:darkolivegreen;
+}
+h1{
+    text-align:center;
+    text-decoration: bold;
+}
+h2{
+    text-align: right;
+    color:grey;
+}
+main{
+    image-orientation: center;
+}
+
