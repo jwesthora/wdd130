@@ -235,3 +235,52 @@ nav {
         margin-top: 25px;
     }
 }
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: right;
+    color: white;
+    font-size: 16px;
+    
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    width: 20%;
+  }
+  /* Style the search field */
+.search {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #3d405b;
+    float: right;
+    width: 25%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  .submit {
+    float: right;
+    width: 25%;
+    padding: 5px;
+    background: #3d405b;
+    color: white;
+    font-size: 14px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  .submit {
+    background: #3d405b;
+  }
+  
+  /* Clear floats */
+  .submit::after {
+    content: "Click here to submit";
+    clear: both;
+    display: table;
+  }
+  
