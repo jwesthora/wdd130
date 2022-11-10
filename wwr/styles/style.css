@@ -234,7 +234,8 @@ nav {
     footer {
         margin-top: 25px;
     }
-}
+    /* page 2 start css*/
+
 /* Container holding the image and the text */
 .container {
     position: relative;
@@ -249,7 +250,6 @@ nav {
     position: absolute;
     bottom: 40px;
     right: 10px;
-    width: 20%;
   }
   /* Style the search field */
 .search {
@@ -279,8 +279,17 @@ nav {
   
   /* Clear floats */
   .submit::after {
-    content: "Click here to submit";
+    content: "search";
     clear: both;
     display: table;
   }
+  /* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
   
