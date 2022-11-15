@@ -211,10 +211,10 @@ nav {
   
   /* Style the submit button */
   form.example button {
-    float: left;
+    float: right;
     width: 20%;
     padding: 10px;
-    background: #2196F3;
+    background: #adafb0;
     color: white;
     font-size: 17px;
     border: 1px solid grey;
@@ -222,9 +222,6 @@ nav {
     cursor: pointer;
   }
   
-  form.example button:hover {
-    background: #0b7dda;
-  }
   
   /* Clear floats */
   form.example::after {
@@ -322,6 +319,11 @@ grid-column: 1/2;
   }
   
 @media screen and (max-width: 900px) {
+    #container, #container-img, .planning-grid{
+        display: block;
+        height: auto;
+    }
+    
     #hero, .home-grid {
         display: block;
         height: auto;
