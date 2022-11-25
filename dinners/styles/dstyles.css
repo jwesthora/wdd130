@@ -6,56 +6,117 @@
 }*/
 /*.grid{
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
 }*/
-.introduction{
-grid-column: 1/2;
-grid-row: 2/3;
-}
-main, .dinner-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 1em;
-}
-#msg{
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
 nav a{
     grid-row: 2/3;
     text-align:center; 
     text-decoration:none; 
     padding: 50px; 
 }
+header{
+    font-family: serif;
+    background-color: #c5baaf;
+    color:#ffff;
+    width: 100%;
+}
+#welcome{
+    font-style: "dancing script";
+    color: #424b54;
+}
+.introduction{
+grid-column: 2/3;
+grid-row: 1/2;
+font-family: serif;
+font-size: medium;
+text-size-adjust: 50%;
+background-color: #424b54;
+color: #c5baaf;
+text-align: center;
+padding-top: 2em;
+padding-bottom: 2em;
+}
+#p1{
+    text-align: center;
+}
+main, .dinner-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #424b54;
+    color:#c5baaf;
+    /*grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1em;*/
+}
+#msg{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
 #logo_link{
     padding-top: 5px;
-    justify-self: center;
     align-self:center;
 }
 .home-little{
     text-align: center;
 }
-#stressed{
+#stressed, .woman{
     grid-column: 1/2;
     grid-row: 1/2;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    border: 5px solid #c5baaf;
+    width: 500px;
+    height:300px;
+    object-fit: cover;
 }
-#help{
-    grid-column: 3/4;
+#help-me, .help{
+    grid-column: 2/2;
     grid-row: 1/2;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    border: 5px solid #c5baaf;
+    width: 500px;
+    height:300px;
+    object-fit: cover;
 }
-.why-subscribe{
+/*#button{
+    font-size: larger;
     grid-column: 2/3;
     grid-row: 2/3;
-}
+    text-align: center;
+    font-family: cursive;
+}*/
+
 .bonus{
     grid-column: 2/3;
     grid-row: 2/3;
+    font-size: larger;
+    text-align: left;
+    padding-inline: 1em;
+    font-family: serif;
 }
 
 footer{
     display: grid;
-    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1 fr; 
+    padding: 50px; 
+    background-color: #c5baaf;
+}
+footer, .media, .plan{
+    grid-column: 2/3;
+    grid-row: 1;
+    text-align: right;
+}
+footer, .media, .social{
+    grid-column:3/4;
+    grid-row: 1;
+    text-align: left;
 }
