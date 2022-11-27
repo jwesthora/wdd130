@@ -9,6 +9,7 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
 }*/
+
 nav a{
     grid-row: 2/3;
     text-align:center; 
@@ -21,15 +22,18 @@ header{
     color:#ffff;
     width: 100%;
 }
-#welcome{
+/*.welcome{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
     font-style: "dancing script";
-    color: #424b54;
-}
+    color: #c5baaf;
+}*/
 .introduction{
-grid-column: 2/3;
+grid-column: 1/3;
 grid-row: 1/2;
 font-family: serif;
-font-size: medium;
+font-size: larger;
 text-size-adjust: 50%;
 background-color: #424b54;
 color: #c5baaf;
@@ -37,10 +41,15 @@ text-align: center;
 padding-top: 2em;
 padding-bottom: 2em;
 }
-#p1{
-    text-align: center;
+#points{
+    text-align: left;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    padding-top: 1em;
+
 }
 main, .dinner-grid{
+    column-gap: 2em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -51,8 +60,9 @@ main, .dinner-grid{
     grid-gap: 1em;*/
 }
 #msg{
-    grid-column: 2/3;
-    grid-row: 3/4;
+    grid-column: 2/4;
+    grid-row: 2/4;
+
 }
 
 #logo_link{
@@ -70,8 +80,8 @@ main, .dinner-grid{
     padding-right: 1em;
     padding-bottom: 1em;
     border: 5px solid #c5baaf;
-    width: 500px;
-    height:300px;
+    width: 100%;
+    height:100%;
     object-fit: cover;
 }
 #help-me, .help{
@@ -82,25 +92,34 @@ main, .dinner-grid{
     padding-right: 1em;
     padding-bottom: 1em;
     border: 5px solid #c5baaf;
-    width: 500px;
-    height:300px;
+    width: 100%;
+    height:100%;
     object-fit: cover;
 }
-/*#button{
-    font-size: larger;
+
+.sub-button{
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 4/4;
+    border:#424b54;
+    color: #424b54;
+    padding: 4px 4px;
     text-align: center;
-    font-family: cursive;
-}*/
+    text-decoration: none;
+    font-size: 24px;
+    background-color: #c5baaf;
+    cursor: pointer;
+    padding-bottom: 2em;
+  }
 
 .bonus{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    font-size: larger;
+    grid-column: 2/4;
+    grid-row: 2/4;
+    font-size: medium;
     text-align: left;
     padding-inline: 1em;
     font-family: serif;
+    padding-top: 1.5em;
+
 }
 
 footer{
@@ -110,13 +129,13 @@ footer{
     padding: 50px; 
     background-color: #c5baaf;
 }
-footer, .media, .plan{
-    grid-column: 2/3;
+footer, .plan{
+    grid-column: 1/2;
     grid-row: 1;
-    text-align: right;
+    text-align: left;
 }
 footer, .media, .social{
     grid-column:3/4;
     grid-row: 1;
-    text-align: left;
+    text-align: center;
 }
