@@ -85,18 +85,24 @@
       border: 1px solid #ebcfb2;
     }
   }
-nav a{
+nav a {
+    font-family:Verdana, Tahoma, sans-serif;
+    font-size: 18px;
+    width: 100%;
     grid-row: 2/3;
-    text-align:center; 
+    text-align:center;
+    padding: 60px; 
+    color:#424b54;
     text-decoration:none; 
-    padding: 50px; 
+    padding: 20px; 
 }
 header{
-    font-family: serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #c5baaf;
     color:#ffff;
     width: 100%;
 }
+
 /*.welcome{
     grid-column: 1/2;
     grid-row: 1/2;
@@ -177,13 +183,13 @@ main, .dinner-grid{
     grid-row: 4/4;
     border:#424b54;
     color: #424b54;
-    padding: 4px 4px;
+    padding: 5px;
     text-align: center;
     text-decoration: none;
     font-size: 24px;
     background-color: #c5baaf;
     cursor: pointer;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
   }
 
 .bonus{
@@ -201,7 +207,7 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1 fr; 
-    padding: 50px; 
+    padding: 5px; 
     background-color: #c5baaf;
 }
 footer, .plan{
@@ -213,4 +219,34 @@ footer, .media, .social{
     grid-column:3/4;
     grid-row: 1;
     text-align: center;
+}
+/* DO NOT ENTER ANY CSS BELOW HERE!!!!*/
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    #stressed, #help-me { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    
+    footer {
+        margin-top: 25px;
+    }
 }
