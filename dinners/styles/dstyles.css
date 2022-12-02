@@ -206,7 +206,7 @@ main, .dinner-grid{
 footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1 fr; 
+    grid-template-rows: 1fr 1fr; 
     padding: 5px; 
     background-color: #c5baaf;
 }
@@ -220,9 +220,43 @@ footer, .media, .social{
     grid-row: 1;
     text-align: center;
 }
+/* recipe page css*/
+main, .recipe-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; 
+    column-gap: 20px;  
+}
+ #welcome{
+    font-size: 24px;
+    text-align: right;
+    grid-column: 2/1;
+    grid-row: 2/1;
+    text-align: left;
+ }
+
+main, #recipe-img{
+    float: right;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+   
+
+}
+main, .recipe, .meal-recipe{
+    border: 5px solid #c5baaf;
+   float: right;
+   grid-column: 2/2;
+   padding-left: 1em;
+   padding-top: 1em;
+}
+
+
+
+
 /* DO NOT ENTER ANY CSS BELOW HERE!!!!*/
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .home-grid, .recipe-grid {
         display: block;
         height: auto;
     }
@@ -238,7 +272,7 @@ footer, .media, .social{
         font-size: 25px;
         color: #6f7364;
     }
-    #stressed, #help-me { 
+    #stressed, #help-me, #recipe-img  { 
         margin: 50px auto;
         width: 60%;
     }
