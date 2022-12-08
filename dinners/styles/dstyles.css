@@ -250,13 +250,77 @@ main, .recipe, .meal-recipe{
    padding-left: 1em;
    padding-top: 1em;
 }
-
+/* Goal Page CSS*/
+main, .goal-grid-left{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr; 
+    column-gap: 5px;
+}
+#inspiration{
+    grid-column: 2/3;
+    grid-row: 3/3;
+    text-align: center;
+    padding-bottom: 5em;
+}
+#goal-1{
+    grid-column: 2/3;
+    grid-row: 1/1;
+    text-align: center;
+    border: 6px solid #c5baaf;
+}
+.first-goal{
+    grid-column: 2/3;
+    text-align: center;
+    padding-top: 2em;
+}
+#getting-started{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-top: 5em;
+    text-align: center;
+}
+#goal-2{
+    grid-column: 1/2;
+    grid-row: 2/2;
+    text-align: center;
+    font-size: larger;
+    border: 2px solid #c5baaf;
+}
+.second-goal{
+    grid-column: 1/2;
+    grid-row: 3/3;
+    text-align: center;
+    padding-top: 2em;
+}
+#happy-family{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    padding-top: 5em;
+}
+#goal-3{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    color: #c5baaf;
+    text-align: center;
+    font-size: larger;
+    border: 2px solid #c5baaf;
+} 
+.third-goal{
+   grid-column: 3/4;
+   grid-row: 3/3;
+   text-align: center;
+   padding-top: 2em;
+   padding-bottom: 2em;
+  
+}
 
 
 
 /* DO NOT ENTER ANY CSS BELOW HERE!!!!*/
 @media screen and (max-width: 900px) {
-    #hero, .home-grid, .recipe-grid {
+    #hero, .home-grid, .recipe-grid, .goal-grid-left {
         display: block;
         height: auto;
     }
@@ -272,7 +336,7 @@ main, .recipe, .meal-recipe{
         font-size: 25px;
         color: #6f7364;
     }
-    #stressed, #help-me, #recipe-img  { 
+    #stressed, #help-me, #recipe-img, #inspiration, #getting-started, #happy-family  { 
         margin: 50px auto;
         width: 60%;
     }
