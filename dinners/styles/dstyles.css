@@ -233,6 +233,7 @@ main, .recipe-grid{
     grid-column: 2/1;
     grid-row: 2/1;
     text-align: left;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  }
 
 main, #recipe-img{
@@ -268,6 +269,7 @@ main, .goal-grid-left{
     grid-row: 1/1;
     text-align: center;
     border: 6px solid #c5baaf;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .first-goal{
     grid-column: 2/3;
@@ -286,6 +288,7 @@ main, .goal-grid-left{
     text-align: center;
     font-size: larger;
     border: 2px solid #c5baaf;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .second-goal{
     grid-column: 1/2;
@@ -306,6 +309,7 @@ main, .goal-grid-left{
     text-align: center;
     font-size: larger;
     border: 2px solid #c5baaf;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 } 
 .third-goal{
    grid-column: 3/4;
