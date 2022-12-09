@@ -127,6 +127,7 @@ padding-bottom: 2em;
     grid-column: 2/4;
     grid-row: 2/4;
     padding-top: 1em;
+    font-family: serif;
 
 }
 main, .dinner-grid{
@@ -250,6 +251,7 @@ main, .recipe, .meal-recipe{
    grid-column: 2/2;
    padding-left: 1em;
    padding-top: 1em;
+   font-family: serif;
 }
 /* Goal Page CSS*/
 main, .goal-grid-left{
@@ -275,6 +277,7 @@ main, .goal-grid-left{
     grid-column: 2/3;
     text-align: center;
     padding-top: 2em;
+    font-family: serif;
 }
 #getting-started{
     grid-column: 1/2;
@@ -295,6 +298,7 @@ main, .goal-grid-left{
     grid-row: 3/3;
     text-align: center;
     padding-top: 2em;
+    font-family: serif;
 }
 #happy-family{
     grid-column: 3/4;
@@ -317,6 +321,7 @@ main, .goal-grid-left{
    text-align: center;
    padding-top: 2em;
    padding-bottom: 2em;
+   font-family: serif;
   
 }
 
